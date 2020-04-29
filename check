@@ -11,9 +11,46 @@ namespace UnitTest1
 		
 		TEST_METHOD(TestMethod1)
 		{
+			int a = 27;
+			int b = 1;
+			int c = 27;
+			int ans[100];
+			int result[100];
+			for (i = 0; i <= a; i++) {
+
+				Assert::AreEqual(ans[i], result[i]);
+			};
 		}
 		TEST_METHOD(TestMethod2)
 		{
+			int a = 0;
+			int b = 0;
+			int c = 0;
+			int ans[100];
+			int result[100];
+			for (i = 0; i <= 27; i++) {
+
+				Assert::AreEqual(ans[i], result[i]);
+			};
 		}
+		TEST_METHOD(TestMethod3)
+		{
+			int a = 25;
+			int b = 1;
+			int c = 25;
+			int ans;
+			int result;
+			Assert::AreEqual(ans, result);
+		}
+		TEST_METHOD(TestMethod4)
+		{
+			int a = 25;
+			int b = 0;
+			int c = 25;
+			int ans;
+			int result;
+			Assert::AreEqual(ans, result);
+		}
+		
 	};
 }
